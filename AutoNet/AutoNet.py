@@ -14,19 +14,19 @@ post_header={'Accept': 'application/json, text/javascript, */*; q=0.01',
              'Connection': 'keep-alive',
              'Content-Length': '68',
              'Content-Type': 'application/x-www-form-urlencoded',
-             'Cookie': 'think_language=en-GB; PHPSESSID=mkhjrb2eqigihasd5tfnalv4i1; sunriseUsername=20175227033; sunriseDomain=campus',
-             'Host': 'a.suda.edu.cn',
-             'Referer': 'http://a.suda.edu.cn/',
-             'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0',
+             'Cookie': '',
+             'Host': '',
+             'Referer': '',
+             'User-Agent': '',
              'X-Requested-With': 'XMLHttpRequest'}
 
-# 构造登录数据
+# 登录数据
 post_data={
             'domain': '',
             'enablemacauth': '0',
-            'password': 'MDQyODY5NTQ=',
-            'username': '20175227033'
+            'password': 'ABCDEFGHIJK=',
+            'username': '1234567890'
           }
 # 发送post请求登录网页
 z=requests.post(post_addr, data=post_data, headers=post_header)
-print("Internet Login" + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+print("Internet Login " + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
